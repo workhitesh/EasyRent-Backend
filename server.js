@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 
 const mongoose = require('mongoose')
-mongoose.connect("mongodb+srv://RJ:123@cluster0.mhsxpsl.mongodb.net/easyrent?retryWrites=true&w=majority", { useNewUrlParser: true })
+mongoose.connect("mongodb+srv://RJ:123@cluster0.mhs.mongodb.net/easyrent?retryWrites=true&w=majority", { useNewUrlParser: true })
 const db = mongoose.connection
 db.on('error', error => console.error(error))
 db.once('open', () => console.log('Connected to mongoose'))
